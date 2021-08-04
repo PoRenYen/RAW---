@@ -73,7 +73,6 @@ input::placeholder {
     color: var(--main-color);
 }
 
-
 /* breadcrumb */
 
 .breadcrumb {
@@ -170,6 +169,56 @@ input::placeholder {
     margin-left: var(--mb-normal);
 }
 
+/* input BY YEN*/
+
+input.member_login_input{
+    width: 360px;
+    height: 60px;
+    margin-bottom: 55px;
+    margin-left: 37%;
+    background-color: #BCAA9A;
+    border: none;
+
+}
+
+/* button BY YEN */
+button.member_login{
+    font-size:var(--login-font-size);
+    margin-top: 140px;
+    margin-bottom: 110px;
+    font-weight:500;
+    background-color: var(--normal-outline);
+    border:none;
+    margin-left: 35%;
+}
+button.member_sign_up{
+    font-size:var(--login-font-size);
+    margin-top: 140px;
+    margin-bottom: 110px;
+    font-weight:300 ;
+    background-color: var(--normal-outline);
+    border:none;
+    margin-left: 17%;
+}
+
+button.member_login_button{
+    font-size: 1rem;
+    color: #BCAA9A;
+    border: none;
+    width: 160px;
+    height: 60px;
+    background-color: #bcaa9a30;
+    margin-left: 43.5%;
+}
+button.member_login_forget_password{
+    font-size: 1rem;
+    color: #BCAA9A;
+    border: none;
+    width: 160px;
+    height: 60px;
+    background-color: var(--normal-outline);
+    
+}
 
 /* footer */
 
