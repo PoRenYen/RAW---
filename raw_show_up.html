@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>註冊</title>
+    <title>提示框</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
@@ -34,57 +34,109 @@
             </div>
         </div>
     </header>
-
-
-    <div class="container">
-        <!-- row單純NAME -->
-        <div class="row display-flex">
-            <div class="buttom_and_input justify-content-center align-items-flex-start">
-                <button class="member_login">登入</button>
-                <button class="member_sign_up">註冊</button>
-
-                <div class="member_login_box">
-                    <p class="member_login_box_p">信箱</p>
-                    <input type="text" class="member_login_input" placeholder="請輸入信箱">
-                </div>
-
-                <div class="member_login_box ">
-                    <p class="member_login_box_p">密碼</p>
-                    <div class="passwordbox justify-content-space-between">
-                        <input type="text" class="member_login_input_hide" placeholder="請輸入密碼">
-                        <img clas src="./大專切版/svg/eye.svg" alt="">
-                    </div>
-                </div>
-
-                <div class="member_login_box ">
-                    <p class="member_login_box_p">再次輸入密碼</p>
-                    <div class="passwordbox justify-content-space-between">
-                        <input type="text" class="member_login_input_hide" placeholder="請再次輸入密碼">
-                        <img clas src="./大專切版/svg/eye.svg" alt="">
-                    </div>
-                </div>
-
-
-                <!-- radio -->
-
-                <input id="radio-agree" class="radio-custom" name="coupon-pay_group" type="radio">
-                <label for="radio" class="radio-custom-label m_16">
-                    <p>我同意赤著服務條款及隱私政策</p>
-                </label>
-
-                <input id="radio-subscribe" class="radio-custom" name="coupon-pay_group" type="radio">
-                <label for="radio" class="radio-custom-label m_16">
-                    <p>訂閱赤著每月電子報</p>
-                </label>
-
-
-                <button class="member_login_button">確認</button>
-            </div>
-            <div class="big_box justify-content-center align-items-flex-start">
-                <div class="bigbox"></div>
-            </div>
+    <div class="container" style="display:block;">
+        <div class="showup_box">
+            <p>會員中心</p>
+            <button class="showup_box_button">登入</button>
         </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>已加入購物車</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>登入成功</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>已更新</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>已發送</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>註冊成功</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>已移至我再想想</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>超過現有數量</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>已移除商品</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>部分商品已售完</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>上傳成功</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x150">
+            <p>已從我的收藏移除</p>
+            <button class="showup_box_button_300x150">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x186">
+            <div class="color_bar"></div>
+            <p>您確定要移除?</p>
+            <button class="showup_box_button_300x186">取消</button>
+            <button class="showup_box_button_300x186" id="showup_box_button_300x186_sure">確定</button>
+        </div>
+
+        <br>
+
+        <div class="showup_box_300x186">
+            <div class="color_bar"></div>
+            <p>是否要離開此頁面?</p>
+            <button class="showup_box_button_300x186">取消</button>
+            <button class="showup_box_button_300x186" id="showup_box_button_300x186_sure">確定</button>
+        </div>
+
     </div>
+
+
 
     <!-- footer -->
     <footer class="footer">

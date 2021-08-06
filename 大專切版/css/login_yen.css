@@ -1,0 +1,257 @@
+
+
+/*box BY YEN */
+
+.member_login_box{
+    display: flex;
+    height: 114px;
+    }
+    #forget_password_member_login_input{
+height: 68px;
+    }
+    .passwordbox{
+        width: 360px;
+        height: 60px;
+        outline: 2px solid var(--main-color);
+        margin-left: 5%;
+    }
+    .box{
+        width: 300px;
+        height: 300px;
+        background-color:#BCAA9A;
+        position: absolute;
+        right: 18%;
+        top: 47%;
+    }
+
+    #forget_password_box{
+        position: absolute;
+        right: 18%;
+        top:25%;
+    }
+
+    .bigbox{
+        width: 600px;
+        height: 600px;
+        background-color: #BCAA9A;
+        margin-left:30%;
+        
+        
+    }
+    /* p BY YEN */  
+    .member_login_box_p{
+        width: 150px;
+        height: 100px;
+        margin-left: 23%;
+        padding-top:18px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    /* input BY YEN*/
+    
+    input.member_login_input{
+        width: 360px;
+        height: 60px;
+        /* margin-left: 3%; */
+        color: var(--main-color);
+        border: 2px solid #BCAA9A;
+        background-color: var(--white-color); 
+    }
+
+    input.member_login_input_hide{
+        width: 180px;
+        height: 60px;
+        color: var(--main-color);
+        border: none;
+        background-color: var(--white-color);
+        border: none;
+    }
+   
+   
+    /* button BY YEN */
+
+    button.member_login{
+        font-size:var(--login-font-size);
+        margin-bottom: 110px;
+        background-color: var(--normal-outline);
+        border: none;
+        margin-top: 140px;
+        padding-right:90px;
+        border-right:2px solid var(--main-color);
+        margin-left: 35%;
+    }
+    button.member_sign_up{
+        font-size:var(--login-font-size);
+        margin-top: 140px;
+        margin-bottom: 110px;
+        background-color: var(--normal-outline);
+        border:none;
+        margin-left: 10%;
+    }
+    
+    button.member_login_button{
+        font-size:var(--title-font-size) ;
+        color: #fafafa;
+        border: none;
+        width: 160px;
+        height: 60px;
+        background-color:#BCAA9A;
+        margin-left: 35.5%;
+        margin-bottom: 110px;
+    }
+
+    #righet_button_of_forget_password{
+     margin-left: 32px;
+    }
+    #button_of_change_password{
+margin-left: 45%;
+    }
+
+    button.member_login_forget_password{
+        font-size:var(--title-font-size);
+        color: #BCAA9A;
+        border: none;
+        width: 160px;
+        height: 60px;
+        background-color: var(--normal-outline);
+        margin-left: 32px;
+    }
+    .member_login_box > img{
+        width: 38px;
+        height: 30px;
+        /* margin-top: 15px; */
+    }
+    /* CSS BY YEN */
+.display-flex{
+    display: flex;
+}
+
+    .justify-content-center{
+    justify-content: center;
+    }
+    .justify-content-space-between{
+        justify-content:space-between
+    }
+
+    .align-items-flex-start{
+        align-items:flex-start;
+    }
+
+
+    /* radio */
+    /* end only demo styles */
+
+.m_16{
+    margin-left: 16px;
+}
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.radio-custom-label {
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    margin-top: 2px;
+    margin-right: 16px;
+    
+}
+
+.forget_password_h{
+font-size:var(--login-font-size);
+--hover-font-weigh: 500;
+margin-left: 42.5%;
+margin-bottom: 80px;
+}
+
+
+/* 提示框們 */
+.showup_box{
+    width: 296px;
+    height: 141px;
+    background-color:#fafafa;
+    box-shadow: 5px 5px 15px #bcaa9a80;
+}
+
+.showup_box > p{
+  padding-top: 24px;
+  text-align: center;
+}
+.showup_box_button{
+    width: 240px;
+    height: 32px;
+    margin-top: 28px;
+    margin-left: 28px;
+    border:1px solid #BCAA9A;
+    background-color:#fafafa;
+}
+
+.showup_box_300x150{
+    width: 300px;
+    height: 150px;
+    background-color: #fafafa;
+    border: 1px solid #BCAA9A;
+    box-shadow: 5px 5px 15px #bcaa9a80;
+
+}
+.showup_box_300x150 > p{
+    padding-top: 33px;
+    text-align: center;
+}
+.showup_box_button_300x150{
+    width: 236px;
+    height: 32px;
+    margin-top: 33px;
+    margin-left: 32px;
+    border:1px solid #BCAA9A;
+    background-color:#fafafa;
+}
+
+.showup_box_300x186{
+width: 300px;
+height: 186px;
+background-color: #fafafa;
+border: 1px solid #BCAA9A;
+box-shadow: 5px 5px 15px #bcaa9a80;
+}
+.color_bar{
+    width: 100%;
+    height: 32px;
+    background-color: #BCAA9A;
+}
+.showup_box_300x186 > p{
+    padding-top: 30px;
+    text-align: center;
+}
+.showup_box_button_300x186{
+    width: 88px;
+    height: 32px;
+    margin-top: 30px;
+    margin-left: 47px;
+    border:1px solid #BCAA9A;
+    background-color:#fafafa;
+}
+#showup_box_button_300x186_sure{
+    margin-left: 30px;
+}
