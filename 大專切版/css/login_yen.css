@@ -1,19 +1,32 @@
+/* CSS BY YEN */
+    .display-flex{
+        display: flex;
+    }
 
+    .justify-content-center{
+        justify-content: center;
+    }
+    .justify-content-space-between{
+        justify-content:space-between
+    }
 
-/*box BY YEN */
+    .align-items-flex-start{
+        align-items:flex-start;
+    }
 
-.member_login_box{
+/*包覆性框架 BOX BY YEN */
+
+    .member_login_box{
     display: flex;
     height: 114px;
     }
-    #forget_password_member_login_input{
-height: 68px;
-    }
+    
     .passwordbox{
         width: 360px;
         height: 60px;
         outline: 2px solid var(--main-color);
-        margin-left: 5%;
+        display: flex;
+        align-items: center;
     }
     .box{
         width: 300px;
@@ -23,7 +36,7 @@ height: 68px;
         right: 18%;
         top: 47%;
     }
-
+ 
     #forget_password_box{
         position: absolute;
         right: 18%;
@@ -47,7 +60,9 @@ height: 68px;
         text-align: center;
         font-size: 20px;
     }
-    
+    #password_again{
+        margin-left:5%;
+    }
     /* input BY YEN*/
     
     input.member_login_input{
@@ -67,11 +82,14 @@ height: 68px;
         background-color: var(--white-color);
         border: none;
     }
-   
+
+    #forget_password_member_login_input{
+        height: 68px;
+        }
    
     /* button BY YEN */
 
-    button.member_login{
+.member_login{
         font-size:var(--login-font-size);
         margin-bottom: 110px;
         background-color: var(--normal-outline);
@@ -81,13 +99,17 @@ height: 68px;
         border-right:2px solid var(--main-color);
         margin-left: 35%;
     }
-    button.member_sign_up{
+.member_sign_up{
         font-size:var(--login-font-size);
         margin-top: 140px;
         margin-bottom: 110px;
         background-color: var(--normal-outline);
         border:none;
         margin-left: 10%;
+    }
+    
+    .member_login.active{
+    font-weight: 500;
     }
     
     button.member_login_button{
@@ -102,10 +124,10 @@ height: 68px;
     }
 
     #righet_button_of_forget_password{
-     margin-left: 32px;
+        margin-left: 32px;
     }
     #button_of_change_password{
-margin-left: 45%;
+        margin-left: 43%;
     }
 
     button.member_login_forget_password{
@@ -117,72 +139,25 @@ margin-left: 45%;
         background-color: var(--normal-outline);
         margin-left: 32px;
     }
+
     .member_login_box > img{
-        width: 38px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         /* margin-top: 15px; */
     }
-    /* CSS BY YEN */
-.display-flex{
-    display: flex;
-}
-
-    .justify-content-center{
-    justify-content: center;
-    }
-    .justify-content-space-between{
-        justify-content:space-between
-    }
-
-    .align-items-flex-start{
-        align-items:flex-start;
+    .open_eye{
+        width: 40px;   
+        height: 42px;
+        margin-top: 20px;
     }
 
 
-    /* radio */
-    /* end only demo styles */
-
-.m_16{
-    margin-left: 16px;
-}
-
-.radio-custom {
-    opacity: 0;
-    position: absolute;   
-}
-
-.radio-custom, .radio-custom-label {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.radio-custom-label {
-    font-size: 16px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.radio-custom + .radio-custom-label:before {
-    content: '';
-    background: #fff;
-    border: 1px solid rgb(0, 0, 0);
-    display: inline-block;
-    vertical-align: middle;
-    width: 12px;
-    height: 12px;
-    padding: 2px;
-    margin-top: 2px;
-    margin-right: 16px;
-    
-}
 
 .forget_password_h{
-font-size:var(--login-font-size);
---hover-font-weigh: 500;
-margin-left: 42.5%;
-margin-bottom: 80px;
+    font-size:var(--login-font-size);
+    --hover-font-weigh: 500;
+    margin-left: 42.5%;
+    margin-bottom: 80px;
 }
 
 
@@ -195,8 +170,8 @@ margin-bottom: 80px;
 }
 
 .showup_box > p{
-  padding-top: 24px;
-  text-align: center;
+    padding-top: 24px;
+    text-align: center;
 }
 .showup_box_button{
     width: 240px;
@@ -229,11 +204,11 @@ margin-bottom: 80px;
 }
 
 .showup_box_300x186{
-width: 300px;
-height: 186px;
-background-color: #fafafa;
-border: 1px solid #BCAA9A;
-box-shadow: 5px 5px 15px #bcaa9a80;
+    width: 300px;
+    height: 186px;
+    background-color: #fafafa;
+    border: 1px solid #BCAA9A;
+    box-shadow: 5px 5px 15px #bcaa9a80;
 }
 .color_bar{
     width: 100%;
@@ -255,3 +230,25 @@ box-shadow: 5px 5px 15px #bcaa9a80;
 #showup_box_button_300x186_sure{
     margin-left: 30px;
 }
+
+/* 修正切換頁面 */
+.tabs-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: row
+  }
+
+  .tab-c {
+    top: 50%;
+    left: 7%;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 1s;
+  }
+
+  .tab-c.active {
+    opacity: 1;
+  }
+
+

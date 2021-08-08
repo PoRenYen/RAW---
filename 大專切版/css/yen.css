@@ -1,0 +1,105 @@
+.tabs-container {
+    width: 440px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.225), 0 0 1.5px rgba(0, 0, 0, 0.125);
+  }
+   
+  .tabs-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+   
+  .tabs-pages:focus,
+  .tabs-pages:hover {
+    cursor: pointer;
+  }
+   
+  .tab {
+    width: 50%;
+    padding: 0.5em 1.2em;
+    color: white;
+    background-color: #b6dada;
+    text-align: center;
+  }
+   
+  .tab:hover {
+    background-color: #91c8c8;
+  }
+   
+ 
+  .tab.active {
+    background-color: #008080;
+  }
+   
+  .tabs-contents {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+   
+  .tab-c {
+    position: absolute;
+    top: 50px;;
+    left: 50px;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    color: black;
+    transition: opacity 1s;
+    
+  }
+   
+  .tab-c.active {
+    opacity: 1;
+  }
+   
+  .inner-content {
+    position: relative;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+  .yenrow{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .loginbox{
+      width: 300px;
+        height: 50px;
+        border: 1px solid black;
+      display: flex;
+      align-items: center;
+
+  }
+
+  .login_btn{
+      width: 88px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background-color: var(--main-color);
+      color: white;
+      border: 1px solid black;
+      margin-left: 16px;
+  }
+
+  .mailinputwrap,.codeinputwrap{
+      width: 200px;
+      height: 40px;
+      margin-left: 16px;
+      border: 1px solid black;
+
+  }
+
+  .yen_justify-flex-end{
+      justify-content: flex-end;
+  }
