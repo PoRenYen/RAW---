@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>註冊</title>
+    <title>登入註冊</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./大專切版/css/main.css">
     <link rel="stylesheet" href="./大專切版/css/login_yen.css">
     <link rel="stylesheet" href="./大專切版/css/Radio.css">
-    <script src="https://kit.fontawesome.com/f56e5ae7a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./大專切版/css/main.css">
+    <link rel="stylesheet" href="./大專切版/css/yen.css">
 </head>
 
 <body>
@@ -37,80 +37,89 @@
         </div>
     </header>
 
-
-    <div class="container">
-        <!-- row單純NAME -->
+    <div class="tabs-container">
         <div class="tabs-pages">
-            <div class="member_login active">登入</div>
-            <div class="member_sign_up">註冊</div>
+            <div class="tab active">登入</div>
+            <div class="tab" id="tab_right">註冊</div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="tab-c active">
+        <div class="tabs-contents">
+            <div class="tab-c active">
+                <div class="inner-content">
+                    <div class="yen-row">
+                        <div class="loginbox">
+                            <p>信箱</p>
+                            <div class="passwordbox">
+                                <input type="text" class="mailinputwrap" placeholder="請輸入信箱">
+                            </div>
+                        </div>
 
-            <div class="member_login_box">
-                <p class="member_login_box_p">信箱</p>
-                <input type="text" class="member_login_input" placeholder="請輸入電子信箱">
-            </div>
+                        <div class="loginbox">
+                            <p>密碼</p>
+                            <div class="passwordbox">
+                                <input type="text" class="codeinputwrap" placeholder="輸入密碼">
+                                <div class="open_eye"><img src="./大專切版/svg/eye.svg" alt=""></div>
+                            </div>
+                        </div>
 
-            <div class="member_login_box ">
-                <p class="member_login_box_p">密碼</p>
-                <div class="passwordbox justify-content-space-between">
-                    <input type="text" class="member_login_input_hide" placeholder="請輸入密碼">
-                    <div class="open_eye"><img src="./大專切版/svg/eye.svg" alt=""></div>
-                </div>
-            </div>
-            <button class="member_login_button">登入</button>
-            <button class="member_login_forget_password">忘記密碼</button>
-        </div>
-        <div class="box"></div>
-    </div>
+                        <div class="loginbox yen_justify-center">
 
-    <div class="tab-c">
+                            <a class="login_btn" href="">登入</a>
+                            <a class="login_btn" href="">忘記密碼</a>
 
-
-        <div class="member_login_box">
-            <p class="member_login_box_p" id="password_again">信箱</p>
-            <input type="text" class="member_login_input" placeholder="請輸入信箱">
-
-
-            <div class="member_login_box ">
-                <p class="member_login_box_p" id="password_again">密碼</p>
-                <div class="passwordbox justify-content-space-between">
-                    <input type="text" class="member_login_input_hide" placeholder="請輸入密碼">
-                    <div class="open_eye"><img src="./大專切版/svg/eye.svg" alt=""></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="member_login_box ">
-                <p class="member_login_box_p" id="password_again">再次輸入密碼</p>
-                <div class="passwordbox justify-content-space-between">
-                    <input type="text" class="member_login_input_hide" placeholder="請再次輸入密碼">
-                    <div class="open_eye"><img src="./大專切版/svg/eye.svg" alt=""></div>
+            <div class="tab-c">
+                <div class="inner-content">
+                    <div class="yenraw">
+                        <div class="loginbox">
+                            <p>信箱</p>
+                            <div class="passwordbox">
+                                <input type="text" class="mailinputwrap" placeholder="請輸入信箱">
+                            </div>
+                        </div>
+                        <div class="loginbox">
+                            <p>密碼</p>
+                            <div class="passwordbox">
+                                <input type="text" class="codeinputwrap" placeholder="輸入密碼">
+                                <div class="open_eye"><img src="./大專切版/svg/eye.svg" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="loginbox">
+                            <p>密碼</p>
+                            <div class="passwordbox">
+                                <input type="text" class="codeinputwrap" placeholder="請再次輸入密碼">
+                                <div class="open_eye"><img src="./大專切版/svg/eye.svg" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="radiobox">
+                            <input id="radio-agree" class="radio-custom" name="coupon-pay_group" type="radio">
+                            <label for="radio" class="radio-custom-label ml_18-forRadioOfSingUP mt_32-forRadioOfSingUP">
+                                <p>我同意赤著服務條款及隱私政策</p>
+                            </label>
+
+                            <input id="radio-subscribe" class="radio-custom" name="coupon-pay_group" type="radio">
+                            <label for="radio" class="radio-custom-label ml_18-forRadioOfSingUP mt_16-forRadioOfSingUP">
+                                <p>訂閱赤著每月電子報</p>
+                            </label>
+                        </div>
+
+                        <div class="loginbox yen_justify-center">
+
+                            <a class="login_btn" href="">確定</a>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="radiobox">
-                <input id="radio-agree" class="radio-custom" name="coupon-pay_group" type="radio">
-                <label for="radio" class="radio-custom-label m_16">
-                    <p>我同意赤著服務條款及隱私政策</p>
-                </label>
-
-                <input id="radio-subscribe" class="radio-custom" name="coupon-pay_group" type="radio">
-                <label for="radio" class="radio-custom-label m_16">
-                    <p>訂閱赤著每月電子報</p>
-                </label>
-            </div>
-
-            <button class="member_login_button">確認</button>>
         </div>
     </div>
-
-    <div class="big_box justify-content-center align-items-flex-start">
-        <div class="bigbox"></div>
-    </div>
-
 
     <!-- footer -->
     <footer class="footer">
@@ -207,9 +216,9 @@
             </div>
         </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./大專切版/js/yen.js"></script>
-
 
 </body>
 

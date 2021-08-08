@@ -1,9 +1,14 @@
 /* end only demo styles */
 
-.m_16{
-    margin-left: 16px;
+.ml_18-forRadioOfSingUP{
+    margin-left: 18%;
 }
-
+.mt_32-forRadioOfSingUP{
+    margin-top: 32px;
+}
+.mt_16-forRadioOfSingUP{
+    margin-top: 16px;
+}
 .radio-custom {
     opacity: 0;
     position: absolute;   
