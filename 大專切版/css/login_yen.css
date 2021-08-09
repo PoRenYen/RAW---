@@ -1,42 +1,42 @@
-/* CSS BY YEN */
-    .display-flex{
-        display: flex;
-    }
-
-    .justify-content-center{
-        justify-content: center;
-    }
-    .justify-content-space-between{
-        justify-content:space-between
-    }
-
-    .align-items-flex-start{
-        align-items:flex-start;
-    }
-
-
-/*包覆性框架 BOX BY YEN */
-
-    .member_login_box{
+/* css BY Yen */
+.yen-row{
     display: flex;
-    height: 114px;
-    }
-    
+    flex-direction: column;
+}
+
+.yen_justify-center{
+    justify-content: center;
+}
+/*共用BOX BY YEN */
+
     .passwordbox{
-        margin-top: 50px;
+
         width: 360px;
         height: 60px;
         outline: 2px solid var(--main-color);
         display: flex;
         align-items: center;
+        margin-left: 50px
+      }
+
+
+      .loginbox{
+        width:500px;
+        height: 60px;
+        display: flex;
+        margin-top: 32px;
     }
-   
- 
-    #forget_password_box{
+
+      .box{
+        width: 300px;
+        height: 300px;
+        background-color:#BCAA9A;
         position: absolute;
-        right: 18%;
-        top:25%;
-    }
+        left: 105%;
+        top:50%;
+      }
+
+    
 
     /* p BY YEN */  
     .member_login_box_p{
@@ -47,9 +47,13 @@
         text-align: center;
         font-size: 20px;
     }
-    /* #password_again{
-        margin-left:5%;
-    } */
+
+    .loginbox > p{
+        font-size: 20px;
+        /* align-items: center; */
+        /* margin-top: 12%; */
+    }
+
     /* input BY YEN*/
     
     input.member_login_input{
@@ -70,81 +74,36 @@
         border: none;
     }
 
-    #forget_password_member_login_input{
-        height: 68px;
+    #forget_password{
+        /* height: 68px; */
+        align-items: center;
+        
         }
    
     /* button BY YEN */
-
-.member_login{
-        font-size:var(--login-font-size);
-        margin-bottom: 110px;
-        background-color: var(--normal-outline);
-        border: none;
-        margin-top: 140px;
-        padding-right:90px;
-        border-right:2px solid var(--main-color);
-        margin-left: 35%;
-    }
-.member_sign_up{
-        font-size:var(--login-font-size);
-        margin-top: 140px;
-        margin-bottom: 110px;
-        background-color: var(--normal-outline);
-        border:none;
-        margin-left: 10%;
-    }
-    
-    .member_login.active{
-    font-weight: 500;
-    }
-    
-    button.member_login_button{
-        font-size:var(--title-font-size) ;
-        color: #fafafa;
-        border: none;
+    .login_btn{
         width: 160px;
         height: 60px;
-        background-color:#BCAA9A;
-        margin-left: 35.5%;
-        margin-bottom: 110px;
-    }
-
-    #righet_button_of_forget_password{
-        margin-left: 32px;
-    }
-    #button_of_change_password{
-        margin-left: 43%;
-    }
-
-    button.member_login_forget_password{
-        font-size:var(--title-font-size);
-        color: #BCAA9A;
-        border: none;
-        width: 160px;
-        height: 60px;
-        background-color: var(--normal-outline);
+        text-align: center;
+        line-height: 60px;
+        background-color: var(--main-color);
+        color: white;
         margin-left: 32px;
     }
 
-    .member_login_box > img{
-        width: 20px;
-        height: 20px;
-        /* margin-top: 15px; */
-    }
     .open_eye{
         width: 40px;   
         height: 42px;
         margin-top: 20px;
     }
 
-
+   
 
 .forget_password_h{
     font-size:var(--login-font-size);
     --hover-font-weigh: 500;
     margin-left: 42.5%;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 
@@ -158,7 +117,7 @@
 
 .showup_box > p{
     padding-top: 24px;
-    text-align: center;
+    padding-left: 28px;
 }
 .showup_box_button{
     width: 240px;
@@ -218,7 +177,52 @@
     margin-left: 30px;
 }
 
-/* 修正切換頁面 */
+/* 登入/註冊 切換頁面 */
+
+.tabs-container {
+    width: 440px;
+    height: 660px;
+    margin: 0 auto;
+  }
+   
+  .tabs-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+   
+  .tabs-pages:focus,
+  .tabs-pages:hover {
+    cursor: pointer;
+  }
+   
+  .tab {
+    width: 50%;
+    color:#BCAA9A;
+    font-size: 45px;
+    text-align: center;
+    border-right:1px solid #BCAA9A;
+  }
+
+   #tab_right{
+     border: none;
+   }
+
+  .tab:hover {
+    font-weight: 500;
+  }
+   
+  .tab.active {
+    font-weight: 500;
+  }
+
+.tabs-contents {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 .tabs-pages {
     width: 100%;
     display: flex;
@@ -226,9 +230,9 @@
   }
 
   .tab-c {
-    /* position: absolute; */
-    top: 50%;
-    left: 17%;
+    position: absolute;
+    top: 60%;
+    left: 0%;
     opacity: 0;
     width: 100%;
     height: auto;
@@ -236,21 +240,106 @@
   }
 
   .tab-c.active {
-    opacity: 1;
+    opacity:1;
   }
   .inner-content {
     position: relative;
-    padding: 2em;
     display: flex;
     justify-content: center;
     
   }
 
-  .box{
-    width: 300px;
-    height: 300px;
-    background-color:#BCAA9A;
-    position: absolute;
-    left: 105%;
-    top:50%;
+  .mailinputwrap,.codeinputwrap{
+    width: 360px;
+    height: 60px;
+    margin-left: 16px;
+    background-color: #fafafa;
+    border:none;
+}
+
+.singUp_loginIn_input_p{
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+/*  radio */
+.radiobox{
+    /* margin-top: 32px; */
+}
+
+.ml_18-forRadioOfSingUP{
+    margin-left: 18%;
+}
+.mt_32-forRadioOfSingUP{
+    margin-top: 32px;
+}
+.mt_16-forRadioOfSingUP{
+    margin-top: 16px;
+}
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.radio-custom-label {
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    margin-top: 2px;
+    margin-right: 16px;
+    
+}
+
+
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 12px;
+
+    text-align: center;
+    color: rgb(97, 94, 94);
+}
+
+
+/* 更改密碼 */
+.change_pasword_h{
+    font-size:var(--login-font-size);
+    --hover-font-weigh: 500;
+    margin-left: 39.5%;
+}
+
+#change_password_btn{
+    margin-left:33.5%;
+    margin-top: 84px;
   }
+
+
+/* 忘記密碼 */
+#forget_password_btn{
+    margin-left: 13%;
+}
