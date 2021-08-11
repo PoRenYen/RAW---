@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的穿搭</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="lightbox_background"></div>
+    <!-- header -->
+    <header class="header">
+        <div class="headercontainer headerandfooter">
+            <div class="logo">
+                <a href="#"><img src="../svg/logo.svg" alt=""></a>
+            </div>
+            <nav class="nav">
+                <a href="#">ALL</a>
+                <a href="#">NEW</a>
+                <a href="#">FEATURES</a>
+            </nav>
+            <div class="header_icons">
+                <a href="#"><img src="../svg/search.svg" alt=""></a>
+                <a href="#"><img src="../svg/account.svg" alt=""></a>
+                <a href="#"><img src="../svg/heart.svg" alt=""></a>
+                <a href="#"><img src="../svg/cart.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container twosides_container">
+        <div class="select_sidebar">
+            <div class="select_sidebar_box">
+                我的資料
+            </div>
+            <div class="select_sidebar_box">
+                我的訂單
+            </div>
+            <div class="select_sidebar_box">
+                我在赤著
+            </div>
+            <div class="select_sidebar_box select_sidebar_box_active">
+                我的穿搭
+            </div>
+            <div class="select_sidebar_box">
+                我的搜尋
+            </div>
+        </div>
+        <div class="member_right_sidebar">
+            <div class="member_right_btn" id="add_my_new_card">
+                新增我的穿搭
+            </div>
+            <div class="member_right_btn" id="change_my_height">
+                我的身型
+            </div>
+            <div class="add_new_card">
+                <div class="add_new_card_photo">+</div>
+                <div class="add_new_card_right">
+                    <div class="add_new_card_prod_box">
+                        <div class="add_new_card_prod">+</div>
+                        <div class="add_new_card_prod">+</div>
+                        <div class="add_new_card_prod">+</div>
+                    </div>
+                    <div class="add_new_card_title">穿搭心得</div>
+                    <input type="text" class="add_new_card_content">
+                    <div class="add_new_card_title">*同意分享至Lookbook</div>
+                    <div class="add_new_card_btns">
+                        <button class="add_new_card_left_btn" id="add_new_card_close">取消</button>
+                        <button class="add_new_card_right_btn" id="add_new_card_save">儲存</button>
+                    </div>
+                </div>
+            </div>
+            <div class="change_myheight">
+                <div class="change_myheight_input_box">
+                    請輸入 :<input type="text" class="change_myheight_input">cm
+                </div>
+                <div class="add_new_card_btns">
+                    <button class="add_new_card_left_btn" id="change_my_height_close">取消</button>
+                    <button class="add_new_card_right_btn" id="change_my_height_save">儲存</button>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="cards right_cards">
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion1.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion4.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion5.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion6.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion7.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion8.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion1.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion4.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion5.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="member_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion6.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <div class="card_content_box">
+                        <a href="#">
+                            <p class="card_content">2021/08/06</p>
+                        </a>
+                        <div class="member_heart_count">
+                            <img src="../svg/heart.svg" alt="">
+                            <p>99</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 彈出視窗 -->
+    <div class="add_new_card_lightbox_container">
+        <div class="add_new_card_photo"></div>
+        <div class="add_new_card_lightbox_right">
+            <div class="add_new_card_title">選擇服飾</div>
+            <div class="add_new_card_lightbox_content">
+                <div class="add_new_card_title">類別</div>
+                <div class="add_new_card_lightbox_select"></div>
+                <div class="add_new_card_title">紀錄</div>
+                <div class="add_new_card_lightbox_select"></div>
+            </div>
+            <div class="add_new_card_btns">
+                <button class="add_new_card_left_btn" id="add_new_lightbox_close">取消</button>
+                <button class="add_new_card_right_btn" id="add_new_lightbox_save">儲存</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footercontainer headerandfooter">
+            <div class="footer_column">
+                <div class="footer_box">
+                    <a href="#">
+                        <p class="footer_title">ABOUT US</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer_content">關於赤著</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer_content">隱私權保護</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer_content">服務條款</p>
+                    </a>
+                </div>
+                <div class="footer_box mt_normal">
+                    <p class="footer_title">STORE</p>
+                    <a href="#">
+                        <p class="footer_content">106台北市大安區復興南路一段390號2樓</p>
+                    </a>
+                    <p class="footer_content">02 6631 6666</p>
+                    <p class="footer_content">mon.~sun. 10:00-21:00</p>
+                </div>
+            </div>
+            <div class="footer_column">
+                <div class="footer_box">
+                    <a href="#">
+                        <p class="footer_title">INFO</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer_content">赤著會員</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer_content">購物流程</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer_content">退換貨政策</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_column">
+                <div class="footer_box">
+                    <a href="#">
+                        <p class="footer_title">FAQ</p>
+                    </a>
+                    <div class="footer_content_box">
+                        <div class="footer_content_column">
+                            <a href="#">
+                                <p class="footer_content">上傳穿搭</p>
+                            </a>
+                            <a href="#">
+                                <p class="footer_content">修改訂單</p>
+                            </a>
+                            <a href="#">
+                                <p class="footer_content">運送方式</p>
+                            </a>
+                        </div>
+                        <div class="footer_content_column">
+                            <a href="#">
+                                <p class="footer_content">付款方式</p>
+                            </a>
+                            <a href="#">
+                                <p class="footer_content">退換貨方式</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_box mt_normal">
+                    <p class="footer_title">CONTACT US</p>
+                    <p class="footer_content">客服信箱 service@raw.com.tw</p>
+                    <p class="footer_content">mon.~fri. 09:00-12:00 / 13:00-18:00</p>
+                    <div class="footer_content footer_icons">
+                        <a href="# "><img src="../svg/facebook.svg " alt=""></a>
+                        <a href="# "><img src="../svg/instagram.svg " alt=""></a>
+                        <a href="# "><img src="../svg/line.svg " alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_column">
+                <div class="footer_box">
+                    <p class="footer_title">NEWS LETTER</p>
+                    <div class="footer_content_box">
+                        <input type="text" class="footer_content" placeholder="輸入 E-MAIL 訂閱電子報">
+                        <button class="footer_content">ENTER</button>
+                    </div>
+                </div>
+                <div class="footer_box">
+                    <p class="footer_content">COPYRIGHT@2021 ©RAW CO.LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

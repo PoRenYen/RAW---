@@ -53,33 +53,9 @@
         /* align-items: center; */
         /* margin-top: 12%; */
     }
-
     /* input BY YEN*/
-    
-    input.member_login_input{
-        width: 360px;
-        height: 60px;
-        /* margin-left: 3%; */
-        color: var(--main-color);
-        border: 2px solid #BCAA9A;
-        background-color: var(--white-color); 
-    }
-
-    input.member_login_input_hide{
-        width: 180px;
-        height: 60px;
-        color: var(--main-color);
-        border: none;
-        background-color: var(--white-color);
-        border: none;
-    }
-
-    #forget_password{
-        /* height: 68px; */
-        align-items: center;
-        
-        }
-   
+    /* input:active{
+    }    */
     /* button BY YEN */
     .login_btn{
         width: 160px;
@@ -112,7 +88,7 @@
     width: 296px;
     height: 141px;
     background-color:#fafafa;
-    box-shadow: 5px 5px 15px #bcaa9a80;
+    box-shadow: 5px 5px 10px #bcaa9a80;
 }
 
 .showup_box > p{
@@ -133,7 +109,7 @@
     height: 150px;
     background-color: #fafafa;
     border: 1px solid #BCAA9A;
-    box-shadow: 5px 5px 15px #bcaa9a80;
+    box-shadow: 5px 5px 10px #bcaa9a80;
 
 }
 .showup_box_300x150 > p{
@@ -154,7 +130,7 @@
     height: 186px;
     background-color: #fafafa;
     border: 1px solid #BCAA9A;
-    box-shadow: 5px 5px 15px #bcaa9a80;
+    box-shadow: 5px 5px 10px #bcaa9a80;
 }
 .color_bar{
     width: 100%;
@@ -259,7 +235,7 @@
 
 .singUp_loginIn_input_p{
     font-size: 20px;
-    margin-top: 3%;
+    margin-top: 35%;
 }
 
 /*  radio */
@@ -337,9 +313,93 @@
     margin-left:33.5%;
     margin-top: 84px;
   }
+  .change_password_p{
+    margin-top:16px ;
+    margin-left:20%;
+  }
 
 
 /* 忘記密碼 */
 #forget_password_btn{
     margin-left: 13%;
+}
+.forget_password_p{
+    margin-top:16px ;
+    margin-left:20%;
+}
+
+/* 手機 */
+@media screen and (max-width: 376px) {
+    .tabs-container {
+        width: 100%;
+    }
+    .loginbox{
+    width:100%;
+    height:auto;
+    display:flex;
+    }
+    .singUp_loginIn_input_p{
+        font-size:14px;
+    }
+    .passwordbox{
+        width: 289px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .login_btn{
+        width: 138px;
+        height: 40px;
+    
+    }
+    .open_eye{
+        margin-right: 15px;
+        margin-top:25px;
+    }
+    /* 登入/註冊 */
+
+    .tab {
+        width: 50%;
+        color:#BCAA9A;
+        font-size:16px;
+        text-align: center;
+        border-right:1px solid #BCAA9A;
+      }
+.radiobox > p{
+    font-size: 14px;
+}
+.radiobox > label{
+    margin-left: 8%;
+}
+    /* 忘記密碼的手機 */
+    .forget_password_h{
+    font-size: 16px;
+    margin-top: 80px;
+    font-weight: 500;
+    margin-left: 43%;
+    }
+    #forget_password_btn{
+        margin-left: 3%;
+    }
+    .forget_password_p{
+        font-size: 12px;
+        margin-left: 16%;
+    }
+
+
+    /* 更改密碼 */
+    .change_pasword_h{
+        font-size: 16px;
+        margin-top: 80px;
+        font-weight: 500;
+        margin-left: 43%;
+    }
+    .change_password_p{
+        font-size: 12px;
+        margin-left: 16%;
+    }
+
+    #change_password_btn{
+margin-left: 25%;
+    }
+
 }
