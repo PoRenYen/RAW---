@@ -80,7 +80,7 @@ $('select').each(function() {
     $this.wrap('<div class="select"></div>');
 
     // Insert a styled div to sit over the top of the hidden select element
-    $this.after('<div class="styledSelect"></div>');
+    $this.after('<div class="styledSelect"</div>');
 
     // Cache the styled div
     var $styledSelect = $this.next('div.styledSelect');
@@ -89,15 +89,19 @@ $('select').each(function() {
     $styledSelect.text($this.children('option').eq(0).text());
 
     // Insert an unordered list after the styled div and also cache the list
-    var $list = $('<ul />', {
+    var $list = $('<ul/>', {
         'class': 'options'
     }).insertAfter($styledSelect);
 
     // Insert a list item into the unordered list for each select option
     for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
+        // $('<li />', {
+        //     text: $this.children('option').eq(i).text(),
+        //     rel: $this.children('option').eq(i).val()
+        // }).appendTo($list);
+        $('<a />', {
             text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
+            href: $this.children('option').eq(i).val().toLowerCase() + '.html'
         }).appendTo($list);
     }
 
@@ -129,4 +133,75 @@ $('select').each(function() {
         $list.hide();
     });
 
+});
+
+// rwd 側拉nav
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle')
+    // navClose = document.getElementById('nav-close'),
+    // hamburger = document.getElementsByClassName('hamburger_box')
+    // hamburger.onclick = function() {
+    //     hamburger.classList.toggle('active');
+    // }
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show-menu'),
+            navToggle.classList.toggle('active');
+    })
+}
+
+// if (navClose) {
+//     navClose.addEventListener('click', () => {
+//         navMenu.classList.remove('show-menu')
+//     })
+// }
+
+// footer plus show and hide
+$("#footer-aboutus").click(function() {
+    $(".footer_aboutus").slideToggle("footer_show");
+    $(".footer_info").slideUp("footer_show");
+    $(".footer_faq").slideUp("footer_show");
+    $("#footer-aboutus").slideUp("footer_plus_none");
+    $("#footer-aboutus-close").slideDown("footer_show");
+    $("#footer-info").slideDown("footer_plus_none");
+    $("#footer-info-close").slideUp("footer_show");
+    $("#footer-faq").slideDown("footer_plus_none");
+    $("#footer-faq-close").slideUp("footer_show");
+});
+$("#footer-aboutus-close").click(function() {
+    $(".footer_aboutus").slideUp("footer_show");
+    $("#footer-aboutus").slideDown("footer_plus_none");
+    $("#footer-aboutus-close").slideUp("footer_show");
+});
+$("#footer-info").click(function() {
+    $(".footer_aboutus").slideUp("footer_show");
+    $(".footer_info").slideDown("footer_show");
+    $(".footer_faq").slideUp("footer_show");
+    $("#footer-aboutus").slideDown("footer_plus_none");
+    $("#footer-aboutus-close").slideUp("footer_show");
+    $("#footer-info").slideUp("footer_plus_none");
+    $("#footer-info-close").slideDown("footer_show");
+    $("#footer-faq").slideDown("footer_plus_none");
+    $("#footer-faq-close").slideUp("footer_show");
+});
+$("#footer-info-close").click(function() {
+    $(".footer_info").slideUp("footer_show");
+    $("#footer-info").slideDown("footer_plus_none");
+    $("#footer-info-close").slideUp("footer_show");
+});
+$("#footer-faq").click(function() {
+    $(".footer_aboutus").slideUp("footer_show");
+    $(".footer_info").slideUp("footer_show");
+    $(".footer_faq").slideDown("footer_show");
+    $("#footer-aboutus").slideDown("footer_plus_none");
+    $("#footer-aboutus-close").slideUp("footer_show");
+    $("#footer-info").slideDown("footer_plus_none");
+    $("#footer-info-close").slideUp("footer_show");
+    $("#footer-faq").slideUp("footer_plus_none");
+    $("#footer-faq-close").slideDown("footer_show");
+});
+$("#footer-faq-close").click(function() {
+    $(".footer_faq").slideUp("footer_show");
+    $("#footer-faq").slideDown("footer_plus_none");
+    $("#footer-faq-close").slideUp("footer_show");
 });
