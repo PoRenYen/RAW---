@@ -81,6 +81,7 @@
                                 <div class="open_eye">
                                     <input type="image" onclick="myFunction()" src="./大專切版/svg/eye.svg"
                                         id="password_open_eye_svg">
+                                    <img src="./大專切版/svg/eye-off.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -88,7 +89,7 @@
                         <div class="loginbox_btn">
 
                             <a class="login_btn" href="#">登入</a>
-                            <a class="login_btn" href="#">忘記密碼</a>
+                            <a class="login_btn" href="#" id="singUp_forget_password_btn">忘記密碼</a>
 
                         </div>
                     </div>
@@ -112,9 +113,9 @@
                                 <p class="singUp_input_p">密碼</p>
                             </div>
                             <div class="passwordbox" style="margin-bottom: 32px;">
-                                <input type="password" class="codeinputwrap" value="" id="myInput" placeholder="輸入密碼">
+                                <input type="password" class="codeinputwrap" value="" id="myInput2" placeholder="輸入密碼">
                                 <div class="open_eye">
-                                    <input type="image" onclick="myFunction()" src="./大專切版/svg/eye.svg"
+                                    <input type="image" onclick="myFunction2()" src="./大專切版/svg/eye.svg"
                                         id="password_open_eye_svg">
                                 </div>
                             </div>
@@ -125,9 +126,10 @@
                                 <p class="singUp_input_p">密碼</p>
                             </div>
                             <div class="passwordbox" style="margin-bottom: 32px;">
-                                <input type="password" class="codeinputwrap" value="" id="myInput" placeholder="輸入密碼">
+                                <input type="password" class="codeinputwrap" value="" id="myInput3"
+                                    placeholder="再次輸入密碼">
                                 <div class="open_eye">
-                                    <input type="image" onclick="myFunction()" src="./大專切版/svg/eye.svg"
+                                    <input type="image" onclick="myFunction3()" src="./大專切版/svg/eye.svg"
                                         id="password_open_eye_svg">
                                 </div>
                             </div>
@@ -294,6 +296,22 @@
                 x.type = "text";
             } else {
                 x.type = "password";
+            }
+        }
+        function myFunction2() {
+            var y = document.getElementById("myInput2");
+            if (y.type === "password") {
+                y.type = "text";
+            } else {
+                y.type = "password";
+            }
+        }
+        function myFunction3() {
+            var z = document.getElementById("myInput3");
+            if (z.type === "password") {
+                z.type = "text";
+            } else {
+                z.type = "password";
             }
         }
     </script>

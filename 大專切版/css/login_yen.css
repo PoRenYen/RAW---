@@ -8,6 +8,9 @@
     .yen_justify-center{
         justify-content: center;
     }
+
+
+    
     /*共用BOX BY YEN */
 
     .passwordbox{
@@ -295,6 +298,11 @@
         color: rgb(97, 94, 94);
     }
 
+    #singUp_forget_password_btn{
+        color: #BCAA9A;
+        background-color:#fafafa;
+    }
+    
 
 /* 更改密碼 */
     .change_pasword_h{
@@ -312,6 +320,9 @@
         font-size: 20px;
         margin-top:16px ;
         
+    }
+    #change_password_sure_btn{
+        margin-left: 25%;
     }
 
 
@@ -531,6 +542,9 @@
 
     #change_password_singUp_input_p{
         margin-left: 40px;
+    }
+    #change_password_sure_btn{
+        margin-left: 30%;
     }
 
    

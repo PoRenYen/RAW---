@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./大專切版/css/login_yen.css">
+    <link rel="stylesheet" href="./大專切版/css/main.css">
+</head>
+
+<body>
+    <div class="passwordbox" style="margin-left: 40% ;margin-top: 20%;">
+        <input type="password" class="codeinputwrap" value="" id="myInput" placeholder="輸入密碼">
+        <div class="open_eye">
+            <input type="image" onclick="myFunction()" src="./大專切版/svg/eye.svg" id="password_open_eye_svg">
+
+            <script>
+                function swapImage() {
+                    var x = document.getElementById("password_open_eye_svg");
+                    if (document.getElementById("password_open_eye_svg").src.endsWith('./大專切版/svg/eye.svg') == true)  //Comparison
+                    {
+                        document.getElementById("password_open_eye_svg").src = "./大專切版/svg/eye-off.svg"; //assignment  
+
+                    }
+                    else if (document.getElementById("password_open_eye_svg").src.endsWith('./大專切版/svg/eye-off.svg') == true) {
+                        document.getElementById("password_open_eye_svg").src = "./大專切版/svg/eye.svg";
+
+                    }
+                }
+
+                function myFunction() {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+
+
+            <!-- <img src="./大專切版/svg/account.svg" id="pic" onclick="swapImage()" /> -->
+
+
+</body>
+
+</html>
