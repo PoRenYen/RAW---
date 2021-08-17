@@ -270,6 +270,8 @@
         z-index: 99;
         width: 20px;
         height: 20px;
+        margin-top: 35px;
+        margin-left: 20%;
     }
 
     .radio-custom, .radio-custom-label {
@@ -448,6 +450,11 @@
        
     }
 
+    .radio-custom{
+        margin-top: 35px;
+        margin-left:0 ;
+    }
+
     .radiobox > p{
         font-size: 14px;
     }
@@ -482,10 +489,13 @@
         margin-top: 20px;
     }
 
-    #password_open_eye_svg{
+    #password_open_eye_svg,
+    #password_open_eye_svg2,
+    #password_open_eye_svg3{
         width: 35px;
         height: 20px;
     }
+    
 
     /* 忘記密碼的手機 */
     .loginbox_forget_password_btn{
@@ -502,7 +512,7 @@
 
     .forget_password_h{
         font-size: 16px;
-        margin-top: 150px;
+        margin-top:0px;
         font-weight: 500;
     }
 
@@ -538,7 +548,7 @@
 
     .change_pasword_h{
         font-size: 16px;
-        margin-top: 150px;
+        margin-top:0px;
         font-weight: 500;
     }
 
