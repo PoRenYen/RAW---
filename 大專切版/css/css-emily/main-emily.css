@@ -294,24 +294,6 @@ input::placeholder {
     font-size: var(--large-font-size);
 }
 
-.nav a {
-    /* width: 60px; */
-    display: flex;
-    justify-content: center;
-}
-
-.nav a:first-child {
-    width: 40px;
-}
-
-.nav a:last-child {
-    width: 115px;
-}
-
-.nav a:hover {
-    font-weight: var(--hover-font-weigh);
-}
-
 .header_icons {
     display: flex;
 }
@@ -443,7 +425,6 @@ input::placeholder {
 /* footer */
 
 .footer_title {
-    width: 100%;
     display: flex;
     align-items: center;
     font-size: var(--normal-font-size);
@@ -451,22 +432,10 @@ input::placeholder {
 }
 
 .footer_content {
-    /* width: 100px; */
     /* display: flex; */
     font-size: var(--small-font-size);
     line-height: var(--small-font-size);
     margin-top: var(--mb-box);
-}
-
-a .footer_content:hover,
-.footer_title a:hover {
-    font-weight: var(--hover-font-weigh);
-}
-
-.footer_faq,
-.footer_faq p.footer_content {
-    width: 100px;
-    margin-right: 0;
 }
 
 .footer_column:not(:last-child) {
@@ -649,10 +618,6 @@ img.fashion_img {
     margin-top: -80px;
 }
 
-.fashion_prod_more a {
-    font-size: var(--normal-font-size);
-}
-
 @media screen and (max-width: 375px) {
     .fashion_hero {
         width: 100%;
@@ -755,7 +720,6 @@ img.fashion_img {
 }
 
 .fashion_prod_title {
-    font-size: var(--normal-font-size);
     margin-bottom: var(--mb-box);
 }
 
@@ -773,7 +737,7 @@ img.fashion_img {
         margin-bottom: var(--rwd-mb-normal);
         font-size: var(--rwd-normal-font-size);
     }
-    .fashion_prod_more a {
+    .fashion_prod_more {
         font-size: var(--rwd-normal-font-size);
     }
     .fashion_prod_link {
@@ -1082,7 +1046,7 @@ img.member_person_card_heart {
     .member_person_card {
         align-items: flex-start;
         margin-left: var(--rwd-mb-normal);
-        justify-content: center;
+        justify-content: start;
     }
     .member_detail_box .card_content_box {
         margin-top: 0;
@@ -1631,28 +1595,5 @@ img.member_person_card_heart {
 @media screen and (max-width: 375px) {
     .pc_dn_select {
         display: block;
-    }
-}
-
-
-/* yinyin
-pagination
-*/
-
-.product_pagination {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /* text-align: center; */
-    font-size: var(--title-font-size);
-}
-
-.product_pagination a {
-    margin: 0 10px;
-}
-
-@media screen and (max-width: 375px) {
-    .product_pagination {
-        font-size: var(--rwd-normal-font-size);
     }
 }

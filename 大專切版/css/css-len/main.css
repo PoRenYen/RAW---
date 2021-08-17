@@ -302,10 +302,12 @@ input::placeholder {
 
 .nav a:first-child {
     width: 40px;
+    justify-content: flex-start;
 }
 
 .nav a:last-child {
     width: 115px;
+    /* justify-content: flex-end; */
 }
 
 .nav a:hover {
@@ -443,7 +445,6 @@ input::placeholder {
 /* footer */
 
 .footer_title {
-    width: 100%;
     display: flex;
     align-items: center;
     font-size: var(--normal-font-size);
@@ -451,22 +452,10 @@ input::placeholder {
 }
 
 .footer_content {
-    /* width: 100px; */
     /* display: flex; */
     font-size: var(--small-font-size);
     line-height: var(--small-font-size);
     margin-top: var(--mb-box);
-}
-
-a .footer_content:hover,
-.footer_title a:hover {
-    font-weight: var(--hover-font-weigh);
-}
-
-.footer_faq,
-.footer_faq p.footer_content {
-    width: 100px;
-    margin-right: 0;
 }
 
 .footer_column:not(:last-child) {
@@ -649,10 +638,6 @@ img.fashion_img {
     margin-top: -80px;
 }
 
-.fashion_prod_more a {
-    font-size: var(--normal-font-size);
-}
-
 @media screen and (max-width: 375px) {
     .fashion_hero {
         width: 100%;
@@ -755,7 +740,6 @@ img.fashion_img {
 }
 
 .fashion_prod_title {
-    font-size: var(--normal-font-size);
     margin-bottom: var(--mb-box);
 }
 
@@ -773,7 +757,7 @@ img.fashion_img {
         margin-bottom: var(--rwd-mb-normal);
         font-size: var(--rwd-normal-font-size);
     }
-    .fashion_prod_more a {
+    .fashion_prod_more {
         font-size: var(--rwd-normal-font-size);
     }
     .fashion_prod_link {
