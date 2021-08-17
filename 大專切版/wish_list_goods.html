@@ -16,12 +16,14 @@
     <!-- header -->
     <header class="header">
         <div class="headercontainer headerandfooter">
-            <div class="hamburger" id="nav-toggle">
-                <img src="../svg/hamburger.svg" alt="">
+            <div class="hamburger">
+                <div class="hamburger_box" id="nav-toggle">
+                    <!-- <img src="./svg/hamburger.svg" alt=""> -->
+                    <!-- <div class="hamburger_line"></div> -->
+                </div>
             </div>
             <div class="logo">
-                <a href="#"><img src="../svg/logo.svg" alt=""></a>
-
+                <a href="#"><img src="./svg/logo.svg" alt=""></a>
             </div>
             <nav class="nav">
                 <a href="#">ALL</a>
@@ -29,17 +31,17 @@
                 <a href="#">FEATURES</a>
             </nav>
             <div class="header_icons">
-                <a href="#"><img src="../svg/search.svg" alt=""></a>
-                <a href="#"><img src="../svg/account.svg" alt=""></a>
-                <a href="#"><img src="../svg/heart.svg" alt=""></a>
-                <a href="#"><img src="../svg/cart.svg" alt=""></a>
+                <a href="#"><img src="./svg/search.svg" alt=""></a>
+                <a href="#"><img src="./svg/account.svg" alt=""></a>
+                <a href="#"><img src="./svg/heart.svg" alt=""></a>
+                <a href="#"><img src="./svg/cart.svg" alt=""></a>
             </div>
             <div class="header_icons_rwd">
-                <a href="#"><img src="../svg/rwd-search.svg" alt=""></a>
-                <a href="#"><img src="../svg/rwd-shopping-cart.svg" alt=""></a>
+                <a href="#"><img src="./svg/rwd-search.svg" alt=""></a>
+                <a href="#"><img src="./svg/rwd-shopping-cart.svg" alt=""></a>
             </div>
             <div class="nav_menu" id="nav-menu">
-                <img src="../svg/close.svg" alt="" id="nav-close">
+                <img src="./svg/close.svg" alt="" id="nav-close">
                 <a href="#">ALL</a>
                 <a href="#">NEW</a>
                 <a href="#">FEATURES</a>
@@ -62,12 +64,14 @@
         <a href="./lookbook.html" class="title_box4">Lookbook</a>
         <a href="./member.html" class="title_box4">Member</a>
     </div>
-    <select class="container select_title_box">
-        <option value="goods">Goods</option>
-        <option value="fashion">Fashion</option>
-        <option value="lookbook">Lookbook</option>
-        <option value="member">Member</option>
-    </select>
+    <div class="pc_dn_select">
+        <select class="container select_title_box">
+            <option value="goods">Goods</option>
+            <option value="fashion">Fashion</option>
+            <option value="lookbook">Lookbook</option>
+            <option value="member">Member</option>
+        </select>
+    </div>
     <!-- cards -->
     <div class="container cards">
         <div class="lookbook_photo_card">
@@ -253,7 +257,15 @@
                 </a>
             </div>
         </div>
-
+        <div class="product_pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">></a>
+        </div>
     </div>
     <!-- footer -->
     <footer class="footer">

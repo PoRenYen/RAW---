@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script type="text/javascript">
+        function swapImage() {
+            if (document.getElementById("pic").src.endsWith('./大專切版/svg/line.svg ') == true)  //Comparison
+            {
+                document.getElementById("pic").src = "./大專切版/svg/instagram.svg"; //assignment  
+
+            }
+            else if (document.getElementById("pic").src.endsWith('./大專切版/svg/instagram.svg') == true) {
+                document.getElementById("pic").src = "./大專切版/svg/line.svg ";
+
+            }
+        }
+    </script>
+
+
+    <img src="./大專切版/svg/line.svg" id="pic" onclick="swapImage()" />
+
+
+</body>
+
+</html>

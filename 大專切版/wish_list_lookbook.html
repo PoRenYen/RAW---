@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wish List - Goods</title>
+    <title>Wish List - Lookbook</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
@@ -13,15 +13,18 @@
 </head>
 
 <body>
+    <div class="lightbox_background"></div>
     <!-- header -->
     <header class="header">
         <div class="headercontainer headerandfooter">
-            <div class="hamburger" id="nav-toggle">
-                <img src="../svg/hamburger.svg" alt="">
+            <div class="hamburger">
+                <div class="hamburger_box" id="nav-toggle">
+                    <!-- <img src="./svg/hamburger.svg" alt=""> -->
+                    <!-- <div class="hamburger_line"></div> -->
+                </div>
             </div>
             <div class="logo">
-                <a href="#"><img src="../svg/logo.svg" alt=""></a>
-
+                <a href="#"><img src="./svg/logo.svg" alt=""></a>
             </div>
             <nav class="nav">
                 <a href="#">ALL</a>
@@ -29,17 +32,17 @@
                 <a href="#">FEATURES</a>
             </nav>
             <div class="header_icons">
-                <a href="#"><img src="../svg/search.svg" alt=""></a>
-                <a href="#"><img src="../svg/account.svg" alt=""></a>
-                <a href="#"><img src="../svg/heart.svg" alt=""></a>
-                <a href="#"><img src="../svg/cart.svg" alt=""></a>
+                <a href="#"><img src="./svg/search.svg" alt=""></a>
+                <a href="#"><img src="./svg/account.svg" alt=""></a>
+                <a href="#"><img src="./svg/heart.svg" alt=""></a>
+                <a href="#"><img src="./svg/cart.svg" alt=""></a>
             </div>
             <div class="header_icons_rwd">
-                <a href="#"><img src="../svg/rwd-search.svg" alt=""></a>
-                <a href="#"><img src="../svg/rwd-shopping-cart.svg" alt=""></a>
+                <a href="#"><img src="./svg/rwd-search.svg" alt=""></a>
+                <a href="#"><img src="./svg/rwd-shopping-cart.svg" alt=""></a>
             </div>
             <div class="nav_menu" id="nav-menu">
-                <img src="../svg/close.svg" alt="" id="nav-close">
+                <img src="./svg/close.svg" alt="" id="nav-close">
                 <a href="#">ALL</a>
                 <a href="#">NEW</a>
                 <a href="#">FEATURES</a>
@@ -53,207 +56,180 @@
     <div class="fake_header"></div>
     <!-- breadcrumb -->
     <div class="container breadcrumb">
-        <a href="#">首頁</a>/<a href="#">我的收藏</a>/<a href="#">Goods</a>
+        <a href="#">首頁</a>/<a href="#">我的收藏</a>/<a href="#">Lookbook</a>
     </div>
     <!-- title_box -->
-    <div class="container title_box">
-        <a href="./goods.html" class="title_box4 title_box_active">Goods</a>
+    <div class="container title_box ">
+        <a href="./goods.html" class="title_box4">Goods</a>
         <a href="./fashion.html" class="title_box4">Fashion</a>
-        <a href="./lookbook.html" class="title_box4">Lookbook</a>
+        <a href="./lookbook.html" class="title_box4 title_box_active">Lookbook</a>
         <a href="./member.html" class="title_box4">Member</a>
     </div>
-    <select class="container select_title_box">
-        <option value="goods">Goods</option>
-        <option value="fashion">Fashion</option>
-        <option value="lookbook">Lookbook</option>
-        <option value="member">Member</option>
-    </select>
+    <div class="pc_dn_select">
+        <select class="container select_title_box">
+            <option value="lookbook">Lookbook</option>
+            <option value="goods">Goods</option>
+            <option value="fashion">Fashion</option>
+            <option value="member">Member</option>
+        </select>
+    </div>
     <!-- cards -->
     <div class="container cards">
         <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion1.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <a href="#" class="lookbook_photo_img2">
-                <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion4.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion5.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion6.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion7.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion8.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion1.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion4.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion5.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion6.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
-        <div class="lookbook_photo_card">
-            <a href="#">
-                <img src="../img/fashion7.jpg" alt="" class="lookbook_photo_img">
-            </a>
-            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
-            <div class="card_content_box">
-                <a href="#">
-                    <p class="card_content">商品名稱</p>
-                    <p class="card_content">NT. 0,000</p>
-                </a>
-            </div>
-        </div>
 
+            <img src="../img/fashion1.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion4.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion5.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion6.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion7.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion8.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion1.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion3.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion4.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion5.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion6.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="lookbook_photo_card">
+
+            <img src="../img/fashion7.jpg" alt="" class="lookbook_photo_img">
+
+            <img src="../svg/delete.svg" alt="" class="lookbook_photo_delete">
+        </div>
+        <div class="product_pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">></a>
+        </div>
+    </div>
+    <!-- 彈出光箱 -->
+    <div class="lookbook_lightbox_container">
+        <img src="../svg/close.svg" alt="" class="lookbook_lightbox_close">
+        <div class="lookbook_lightbox_content">
+            <div class="lookbook_lightbox_product">
+                <div class="lookbook_photo_card">
+                    <a href="#">
+                        <img src="../img/fashion2.jpg" alt="" class="lookbook_photo_img">
+                    </a>
+                    <img src="../svg/heart-white.svg" alt="" class="lookbook_photo_heart">
+                </div>
+            </div>
+            <div class="lookbook_lightbox_right">
+
+                <div class="lookbook_lightbox_title">搭配服飾</div>
+                <div class="lookbook_lightbox_photo">
+
+                    <div class="lookbook_lightbox_photo_card">
+                        <a href="#">
+                            <img src="../img/fashion2.jpg" alt="" class="lookbook_lightbox_photo_img">
+                        </a>
+                        <img src="../svg/heart-white.svg" alt="" class="lookbook_photo_heart">
+                    </div>
+                    <div class="lookbook_lightbox_photo_card">
+                        <a href="#">
+                            <img src="../img/fashion2.jpg" alt="" class="lookbook_lightbox_photo_img">
+                        </a>
+                        <img src="../svg/heart-white.svg" alt="" class="lookbook_photo_heart">
+                    </div>
+                    <div class="lookbook_lightbox_photo_card">
+                        <a href="#">
+                            <img src="../img/fashion2.jpg" alt="" class="lookbook_lightbox_photo_img">
+                        </a>
+                        <img src="../svg/heart-white.svg" alt="" class="lookbook_photo_heart">
+                    </div>
+                </div>
+                <div class="lookbook_lightbox_tag">
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tagsssssssssssssssssss</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                    <a href="#" class="lightbox_tag">tag</a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- footer -->
     <footer class="footer">

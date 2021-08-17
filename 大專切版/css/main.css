@@ -294,6 +294,26 @@ input::placeholder {
     font-size: var(--large-font-size);
 }
 
+.nav a {
+    /* width: 60px; */
+    display: flex;
+    justify-content: center;
+}
+
+.nav a:first-child {
+    width: 40px;
+    justify-content: flex-start;
+}
+
+.nav a:last-child {
+    width: 115px;
+    /* justify-content: flex-end; */
+}
+
+.nav a:hover {
+    font-weight: var(--hover-font-weigh);
+}
+
 .header_icons {
     display: flex;
 }
@@ -1046,7 +1066,7 @@ img.member_person_card_heart {
     .member_person_card {
         align-items: flex-start;
         margin-left: var(--rwd-mb-normal);
-        justify-content: start;
+        justify-content: center;
     }
     .member_detail_box .card_content_box {
         margin-top: 0;
@@ -1595,5 +1615,28 @@ img.member_person_card_heart {
 @media screen and (max-width: 375px) {
     .pc_dn_select {
         display: block;
+    }
+}
+
+
+/* yinyin
+pagination
+*/
+
+.product_pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    font-size: var(--title-font-size);
+}
+
+.product_pagination a {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .product_pagination {
+        font-size: var(--rwd-normal-font-size);
     }
 }

@@ -8,7 +8,12 @@
     .yen_justify-center{
         justify-content: center;
     }
-
+    
+    .mailinputwrap:focus,
+    .codeinputwrap:focus {
+        outline: none;
+    }
+    
 
     
     /*共用BOX BY YEN */
@@ -79,17 +84,19 @@
 
 
     * 提示框們 */
-    .showup_box{
+    /* showup_box 不知為啥壞掉了改300*150 */
+    /* .showup_box{
         width: 296px;
         height: 141px;
         background-color:#fafafa;
-        box-shadow: 5px 5px 10px #bcaa9a80;
-    }
+        box-shadow: 5px 5px 10px #bcaa9a80
 
-    .showup_box > p{
+    } */
+
+    /* .showup_box{
         padding-top: 24px;
         padding-left: 28px;
-    }
+    } */
     .showup_box_button{
         width: 240px;
         height: 32px;
@@ -240,19 +247,25 @@
 
     /*  radio */
     
-
+    .ml_21-forRadioOfSingUP{
+        margin-left: 21%;
+    }
     .ml_18-forRadioOfSingUP{
         margin-left: 18%;
+    }
+    .mt_30-forRadioOfSingUP{
+        margin-top: 25px;
     }
     .mt_32-forRadioOfSingUP{
         margin-top: 32px;
     }
-    .mt_16-forRadioOfSingUP{
-        margin-top: 16px;
+    .mt_40-forRadioOfSingUP{
+        margin-top: 40  px;
     }
 
+
     .radio-custom {
-        opacity: 0;
+        /* opacity: 0; */
         position: absolute;   
     }
 

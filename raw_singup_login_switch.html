@@ -79,9 +79,8 @@
                             <div class="passwordbox" style="margin-bottom: 32px;">
                                 <input type="password" class="codeinputwrap" value="" id="myInput" placeholder="輸入密碼">
                                 <div class="open_eye">
-                                    <input type="image" onclick="myFunction()" src="./大專切版/svg/eye.svg"
+                                    <input type="image" onclick="myFunction()" src="./大專切版/svg/eye-off.svg"
                                         id="password_open_eye_svg">
-                                    <img src="./大專切版/svg/eye-off.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -115,8 +114,8 @@
                             <div class="passwordbox" style="margin-bottom: 32px;">
                                 <input type="password" class="codeinputwrap" value="" id="myInput2" placeholder="輸入密碼">
                                 <div class="open_eye">
-                                    <input type="image" onclick="myFunction2()" src="./大專切版/svg/eye.svg"
-                                        id="password_open_eye_svg">
+                                    <input type="image" onclick="myFunction2()" src="./大專切版/svg/eye-off.svg"
+                                        id="password_open_eye_svg2">
                                 </div>
                             </div>
                         </div>
@@ -129,19 +128,21 @@
                                 <input type="password" class="codeinputwrap" value="" id="myInput3"
                                     placeholder="再次輸入密碼">
                                 <div class="open_eye">
-                                    <input type="image" onclick="myFunction3()" src="./大專切版/svg/eye.svg"
-                                        id="password_open_eye_svg">
+                                    <input type="image" onclick="myFunction3()" src="./大專切版/svg/eye-off.svg"
+                                        id="password_open_eye_svg3">
                                 </div>
                             </div>
                         </div>
 
                         <div class="radiobox">
-                            <input id="radio-agree" class="radio-custom" name="coupon-pay_group" type="radio">
+                            <input id="radio-agree" class="radio-custom ml_18-forRadioOfSingUP mt_32-forRadioOfSingUP"
+                                name="coupon-pay_group" type="radio">
                             <label for="radio" class="radio-custom-label ml_18-forRadioOfSingUP mt_32-forRadioOfSingUP">
                                 <p>我同意赤著服務條款及隱私政策</p>
                             </label>
 
-                            <input id="radio-subscribe" class="radio-custom" name="coupon-pay_group" type="radio">
+                            <input id="radio-subscribe" class="radio-custom" style="margin-left: 21%; margin-top: 5px;"
+                                name="coupon-pay_group" type="radio">
                             <label for="radio" class="radio-custom-label ml_18-forRadioOfSingUP mt_16-forRadioOfSingUP">
                                 <p>訂閱赤著每月電子報</p>
                             </label>
@@ -297,6 +298,16 @@
             } else {
                 x.type = "password";
             }
+
+            var a = document.getElementById("password_open_eye_svg");
+            if (a.src.endsWith('eye.svg') == true)  //Comparison
+            {
+                a.src = "./大專切版/svg/eye-off.svg"; //assignment  
+
+            } else if (a.src.endsWith('eye-off.svg') == true) {
+                a.src = "./大專切版/svg/eye.svg";
+
+            }
         }
         function myFunction2() {
             var y = document.getElementById("myInput2");
@@ -304,6 +315,16 @@
                 y.type = "text";
             } else {
                 y.type = "password";
+            }
+
+            var b = document.getElementById("password_open_eye_svg2");
+            if (b.src.endsWith('eye.svg') == true)  //Comparison
+            {
+                b.src = "./大專切版/svg/eye-off.svg"; //assignment  
+
+            } else if (b.src.endsWith('eye-off.svg') == true) {
+                b.src = "./大專切版/svg/eye.svg";
+
             }
         }
         function myFunction3() {
@@ -313,8 +334,19 @@
             } else {
                 z.type = "password";
             }
+
+            var c = document.getElementById("password_open_eye_svg3");
+            if (c.src.endsWith('eye.svg') == true)  //Comparison
+            {
+                c.src = "./大專切版/svg/eye-off.svg"; //assignment  
+
+            } else if (c.src.endsWith('eye-off.svg') == true) {
+                c.src = "./大專切版/svg/eye.svg";
+
+            }
         }
     </script>
+
 
 </body>
 
